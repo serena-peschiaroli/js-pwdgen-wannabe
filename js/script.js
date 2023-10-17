@@ -9,13 +9,15 @@ generate.addEventListener(`click`, function() {
 
 });
 
+const randomNo = `21`;
+
 
 const passwordTxt = document.getElementById("psw-gen");
 
 
 
 
-document.getElementById("pwd-gen").value = userName + userSurname + userColor;
+document.getElementById("pwd-gen").value = userName + userSurname + userColor + randomNo;
 
 
 const copy = document.getElementById("copy");
