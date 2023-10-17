@@ -13,7 +13,7 @@ body {
     background-color: silver;
 }
 
-.pwd-gen {
+#pwd-gen {
     padding: 20px;
     user-select: none;
     height: 50px;
