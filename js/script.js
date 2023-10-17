@@ -1,28 +1,19 @@
 
-const generate = document.querySelector(`button`);
-generate.addEventListener(`click`, function() {
     const userName = prompt (`Inserisci il tuo nome`);
     const userSurname = prompt (`Inserisci il tuo cognome`);
     const userColor = prompt (`Inserisci il tuo colore preferito`)
 
     console.log (userName + userSurname + userColor);
 
-});
-
-const randomNo = `21`;
-
-
-const passwordTxt = document.getElementById("psw-gen");
-
-
-
+    const randomNo = `21`;
 
 document.getElementById("pwd-gen").value = userName + userSurname + userColor + randomNo;
 
-
-const copy = document.getElementById("copy");
-copy.addEventListener("click", () => {
-  passwordTxt.select();
-  document.execCommand("copy");
-  alert("Password Copied");
-});
+// copy btn
+function copyPassword() {
+    var copyText = document.getElementById("pwd-gen");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); 
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied the text: " + copyText.value);
+  }
