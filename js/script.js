@@ -7,6 +7,8 @@
 
     const randomNo = `21`;
 
+    console.log (userName + userSurname + userColor + randomNo);
+
 document.getElementById("pwd-gen").value = userName + userSurname + userColor + randomNo;
 
 // copy btn
